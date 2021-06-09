@@ -1,6 +1,5 @@
 # coding: utf-8
 from astroid import ImportFrom
-
 from pylint.checkers import BaseChecker
 from pylint.interfaces import IAstroidChecker
 

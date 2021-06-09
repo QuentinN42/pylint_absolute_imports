@@ -12,8 +12,8 @@ setup(
     author='Andrey Chernykh',
     author_email='moonquiz@ya.ru',
     description=(
-        'Pylint plugin for Django projects which adds linter error '
-        'for relative import from another Django app'
+        'Pylint plugin which adds linter error for '
+        'relative imports from the root of the project'
     ),
     classifiers=(
         'Development Status :: 4 - Beta',

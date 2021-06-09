@@ -7,7 +7,7 @@ setup(
     version='0.0.1',
     package_dir={'': 'src'},
     packages=['pylint_relative_imports'],
-    url='',
+    url='https://github.com/kubikvid/pylint-relative-imports',
     license='MIT License',
     author='Andrey Chernykh',
     author_email='moonquiz@ya.ru',

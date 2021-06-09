@@ -21,3 +21,22 @@ import from another app. This plugin checks such imports and adds errors.
 from ..employee.models import Employee  # <- BAD
 from project.employee.models import Employee  # <- Good
 ```
+
+## Installation
+
+```
+pip install pylint-relative-imports
+```
+
+## Usage
+
+In `pylint.rc`:
+```
+[MASTER]
+load-plugins=pylint_relative_imports.relative_imports_checker
+```
+
+Or, in terminal:
+```
+pylint --load-plugins pylint_relative_imports.relative_imports_checker foo.py
+```

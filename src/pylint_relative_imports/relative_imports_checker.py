@@ -29,7 +29,7 @@ class RelativeImportChecker(BaseChecker):
                 'C0001',
                 line=node.lineno,
                 node=node,
-                col_offset=node.col_offset
+                col_offset=node.col_offset,
             )
 
 

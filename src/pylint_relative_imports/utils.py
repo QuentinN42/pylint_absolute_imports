@@ -8,7 +8,7 @@ def levels_to_toplevel(node: ImportFrom) -> int:
     module: Module = node.root()
     dots_count = module.name.count('.')
     if module.file.endswith('__init__.py'):
-        return dots_count  # + 1
+        return dots_count + 1
     return dots_count
 
 

@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name='pylint-relative-imports',
-    version='0.0.3',
+    version='0.0.4',
     package_dir={'': 'src'},
     packages=['pylint_relative_imports'],
     url='https://github.com/kubikvid/pylint-relative-imports',

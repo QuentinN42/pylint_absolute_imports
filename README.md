@@ -33,5 +33,5 @@ load-plugins=pylint_absolute_imports
 Or, in terminal:
 
 ```bash
-pylint --load-plugins pylint_relative_imports foo.py
+pylint --load-plugins pylint_absolute_imports foo.py
 ```

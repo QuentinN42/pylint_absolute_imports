@@ -6,7 +6,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name='pylint_absolute_imports',
-    version='1.0.1',
+    version='1.1.0',
     packages=['pylint_absolute_imports'],
     url='https://github.com/quentinn42/pylint_absolute_imports',
     license='MIT License',

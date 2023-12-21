@@ -1,7 +1,9 @@
 """Strict check of the import."""
 from astroid import ImportFrom  # type: ignore
-from pylint.interfaces import IAstroidChecker  # type: ignore
 from pylint.checkers import BaseChecker  # type: ignore
+import pylint
+
+PYLINT_VERSION_MAJOR = int(pylint.__version__.split(".", maxsplit=1)[0])
 
 
 def is_relative(node: ImportFrom) -> bool:
@@ -13,7 +15,11 @@ class AbsoluteImportChecker(BaseChecker):
 
     """Pylint checker for imports."""
 
-    __implements__ = IAstroidChecker
+    if PYLINT_VERSION_MAJOR < 3:
+        # pylint: disable-next=import-outside-toplevel,no-name-in-module
+        from pylint.interfaces import IAstroidChecker
+
+        __implements__ = IAstroidChecker
 
     name = 'relative-import'
     priority = -1

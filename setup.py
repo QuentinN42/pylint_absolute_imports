@@ -26,6 +26,6 @@ setup(
         'Programming Language :: Python :: 3',
     ),
     install_requires=(
-        'pylint>=2.5.0,<3',
+        'pylint>=2.5.0,<4',
     )
 )
